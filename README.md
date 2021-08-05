@@ -1,4 +1,4 @@
-# usbwebcam-gst
+# gst-webcam
 Simple bash scripts for streaming MJPEG from USB webcam to remote computer with low-latency.
 
 # Requirements
