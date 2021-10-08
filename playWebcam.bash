@@ -24,7 +24,7 @@ fi
 ip=$1
 
 # Check IP address format
-if ! [[ $ip =~ [0-9]+\.[0-9]+\.[0-9]\.[0-9] ]]
+if ! [[ $ip =~ [0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ ]]
 then
 	echo "Error: IP address is not in the correct format. Please use IPv4 addressing."
 	exit 1
