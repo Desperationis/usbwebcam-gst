@@ -43,7 +43,7 @@ if ping -W 3 -c 1 $ip > /dev/null
 then
 	echo "Target exists, starting pipeline(s)..."
 
-	for i in {0..10..1}
+	for i in {0..9}
 	do
 		camera="/dev/video${i}"
 		port="808${i}"
