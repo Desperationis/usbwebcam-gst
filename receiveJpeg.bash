@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# This script displays all MJPEG video streams from ports 8080, 8082, 8084, and 8086
+# This script displays all MJPEG, UDP video streams from ports 8080 to 8089.
 
 # Handle SIGINT
 cleanup() {
@@ -17,7 +17,7 @@ stty -echo
 # Get local IP
 ip=$(hostname -I | cut -d " " -f 1)
 
-for i in {0..6..2}
+for i in {0..9}
 do
 	port="808${i}"
 	echo "Starting up receiver on port $port..."
