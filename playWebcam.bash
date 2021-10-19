@@ -29,6 +29,11 @@ fi
 ip=$1
 ignore=$2
 
+if [[ $# -eq 1 ]]
+then
+	ignore=-1
+fi
+
 # Check IP address format
 if ! [[ $ip =~ [0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ ]]
 then
